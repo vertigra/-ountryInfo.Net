@@ -29,7 +29,6 @@ namespace CountryInfo.Net.Test
                 list.Add(keys.cca2.ToString());
             }
 
-            list.Add("HH");
             return list;
         }
 
