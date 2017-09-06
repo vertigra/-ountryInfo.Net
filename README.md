@@ -1,4 +1,4 @@
-<img src="Images/Logo/icons8-World_Map_100.png"  alt="logo" title="CountryInfo.Net" align="right" height="50" />
+<img src="Images/Logo/icons8-World_Map_100.png"  alt="logo" title="CountryInfo.Net" align="right" height="40" />
 
 # CountryInfo.Net
 
