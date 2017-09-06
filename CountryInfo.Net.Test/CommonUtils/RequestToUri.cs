@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using RestSharp;
 
@@ -37,8 +38,36 @@ namespace CountryInfo.Net.Test.CommonUtils
         }
     }
 
-    internal static class UriConst
+    internal static class ObjectToList
     {
         internal const string mCountriesUri = "/mledoze/countries/master/countries.json";
-    }
+    
+        private static readonly RequestToUri mRequestToUri = new RequestToUri(new RestClient("https://raw.githubusercontent.com"));
+
+        internal static List<string> GetCca2List()
+        {
+            dynamic jobject = mRequestToUri.GetDeserealizeObject(mCountriesUri);
+            var list = new List<string>();
+
+            foreach (dynamic keys in jobject)
+            {
+                list.Add(keys.cca2.ToString());
+            }
+
+            return list;
+        }
+
+        internal static Dictionary<string, string> GetCcn3List()
+        {
+            dynamic jobject = mRequestToUri.GetDeserealizeObject(mCountriesUri);
+            var dictionary = new Dictionary<string, string>();
+
+            foreach (dynamic keys in jobject)
+            {
+                dictionary.Add(keys.name.common.ToString(), keys.ccn3.ToString());  
+            }
+
+            return dictionary;
+        }
+    }   
 }
