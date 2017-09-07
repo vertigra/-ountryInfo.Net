@@ -1,1248 +1,997 @@
 ﻿namespace CountryInfo.Net
 {
     /// <summary>
-    /// Countries code ISO 3166-1 alpha-2
+    /// Countries code ISO 3166-1 numeric
     /// </summary>
-    public enum Cca2
+    public enum Ccn3
     {
         /// <summary>
         /// Aruba
         /// </summary>
-        AW,
-
+        Aruba = 533,
         /// <summary>
         /// Afghanistan
         /// </summary>
-        AF,
-
+        Afghanistan = 004,
         /// <summary>
         /// Angola
         /// </summary>
-        AO,
-
+        Angola = 024,
         /// <summary>
         /// Anguilla
         /// </summary>
-        AI,
-
+        Anguilla = 660,
         /// <summary>
         /// Åland Islands
         /// </summary>
-        AX,
-
+        ÅlandIslands = 248,
         /// <summary>
         /// Albania
         /// </summary>
-        AL,
-
+        Albania = 008,
         /// <summary>
         /// Andorra
         /// </summary>
-        AD,
-
+        Andorra = 020,
         /// <summary>
         /// United Arab Emirates
         /// </summary>
-        AE,
-
+        UnitedArabEmirates = 784,
         /// <summary>
         /// Argentina
         /// </summary>
-        AR,
-
+        Argentina = 032,
         /// <summary>
         /// Armenia
         /// </summary>
-        AM,
-
+        Armenia = 051,
         /// <summary>
         /// American Samoa
         /// </summary>
-        AS,
-
+        AmericanSamoa = 016,
         /// <summary>
         /// Antarctica
         /// </summary>
-        AQ,
-
+        Antarctica = 010,
         /// <summary>
         /// French Southern and Antarctic Lands
         /// </summary>
-        TF,
-
+        FrenchSouthernandAntarcticLands = 260,
         /// <summary>
         /// Antigua and Barbuda
         /// </summary>
-        AG,
-
+        AntiguaandBarbuda = 028,
         /// <summary>
         /// Australia
         /// </summary>
-        AU,
-
+        Australia = 036,
         /// <summary>
         /// Austria
         /// </summary>
-        AT,
-
+        Austria = 040,
         /// <summary>
         /// Azerbaijan
         /// </summary>
-        AZ,
-
+        Azerbaijan = 031,
         /// <summary>
         /// Burundi
         /// </summary>
-        BI,
-
+        Burundi = 108,
         /// <summary>
         /// Belgium
         /// </summary>
-        BE,
-
+        Belgium = 056,
         /// <summary>
         /// Benin
         /// </summary>
-        BJ,
-
+        Benin = 204,
         /// <summary>
         /// Burkina Faso
         /// </summary>
-        BF,
-
+        BurkinaFaso = 854,
         /// <summary>
         /// Bangladesh
         /// </summary>
-        BD,
-
+        Bangladesh = 050,
         /// <summary>
         /// Bulgaria
         /// </summary>
-        BG,
-
+        Bulgaria = 100,
         /// <summary>
         /// Bahrain
         /// </summary>
-        BH,
-
+        Bahrain = 048,
         /// <summary>
         /// Bahamas
         /// </summary>
-        BS,
-
+        Bahamas = 044,
         /// <summary>
         /// Bosnia and Herzegovina
         /// </summary>
-        BA,
-
+        BosniaandHerzegovina = 070,
         /// <summary>
         /// Saint Barthélemy
         /// </summary>
-        BL,
-
+        SaintBarthélemy = 652,
         /// <summary>
         /// Belarus
         /// </summary>
-        BY,
-
+        Belarus = 112,
         /// <summary>
         /// Belize
         /// </summary>
-        BZ,
-
+        Belize = 084,
         /// <summary>
         /// Bermuda
         /// </summary>
-        BM,
-
+        Bermuda = 060,
         /// <summary>
         /// Bolivia
         /// </summary>
-        BO,
-
+        Bolivia = 068,
         /// <summary>
         /// Brazil
         /// </summary>
-        BR,
-
+        Brazil = 076,
         /// <summary>
         /// Barbados
         /// </summary>
-        BB,
-
+        Barbados = 052,
         /// <summary>
         /// Brunei
         /// </summary>
-        BN,
-
+        Brunei = 096,
         /// <summary>
         /// Bhutan
         /// </summary>
-        BT,
-
+        Bhutan = 064,
         /// <summary>
         /// Bouvet Island
         /// </summary>
-        BV,
-
+        BouvetIsland = 074,
         /// <summary>
         /// Botswana
         /// </summary>
-        BW,
-
+        Botswana = 072,
         /// <summary>
         /// Central African Republic
         /// </summary>
-        CF,
-
+        CentralAfricanRepublic = 140,
         /// <summary>
         /// Canada
         /// </summary>
-        CA,
-
+        Canada = 124,
         /// <summary>
         /// Cocos (Keeling) Islands
         /// </summary>
-        CC,
-
+        CocosKeelingIslands = 166,
         /// <summary>
         /// Switzerland
         /// </summary>
-        CH,
-
+        Switzerland = 756,
         /// <summary>
         /// Chile
         /// </summary>
-        CL,
-
+        Chile = 152,
         /// <summary>
         /// China
         /// </summary>
-        CN,
-
+        China = 156,
         /// <summary>
         /// Ivory Coast
         /// </summary>
-        CI,
-
+        IvoryCoast = 384,
         /// <summary>
         /// Cameroon
         /// </summary>
-        CM,
-
+        Cameroon = 120,
         /// <summary>
         /// DR Congo
         /// </summary>
-        CD,
-
+        DRCongo = 180,
         /// <summary>
         /// Republic of the Congo
         /// </summary>
-        CG,
-
+        RepublicoftheCongo = 178,
         /// <summary>
         /// Cook Islands
         /// </summary>
-        CK,
-
+        CookIslands = 184,
         /// <summary>
         /// Colombia
         /// </summary>
-        CO,
-
+        Colombia = 170,
         /// <summary>
         /// Comoros
         /// </summary>
-        KM,
-
+        Comoros = 174,
         /// <summary>
         /// Cape Verde
         /// </summary>
-        CV,
-
+        CapeVerde = 132,
         /// <summary>
         /// Costa Rica
         /// </summary>
-        CR,
-
+        CostaRica = 188,
         /// <summary>
         /// Cuba
         /// </summary>
-        CU,
-
+        Cuba = 192,
         /// <summary>
         /// Curaçao
         /// </summary>
-        CW,
-
+        Curaçao = 531,
         /// <summary>
         /// Christmas Island
         /// </summary>
-        CX,
-
+        ChristmasIsland = 162,
         /// <summary>
         /// Cayman Islands
         /// </summary>
-        KY,
-
+        CaymanIslands = 136,
         /// <summary>
         /// Cyprus
         /// </summary>
-        CY,
-
+        Cyprus = 196,
         /// <summary>
         /// Czechia
         /// </summary>
-        CZ,
-
+        Czechia = 203,
         /// <summary>
         /// Germany
         /// </summary>
-        DE,
-
+        Germany = 276,
         /// <summary>
         /// Djibouti
         /// </summary>
-        DJ,
-
+        Djibouti = 262,
         /// <summary>
         /// Dominica
         /// </summary>
-        DM,
-
+        Dominica = 212,
         /// <summary>
         /// Denmark
         /// </summary>
-        DK,
-
+        Denmark = 208,
         /// <summary>
         /// Dominican Republic
         /// </summary>
-        DO,
-
+        DominicanRepublic = 214,
         /// <summary>
         /// Algeria
         /// </summary>
-        DZ,
-
+        Algeria = 012,
         /// <summary>
         /// Ecuador
         /// </summary>
-        EC,
-
+        Ecuador = 218,
         /// <summary>
         /// Egypt
         /// </summary>
-        EG,
-
+        Egypt = 818,
         /// <summary>
         /// Eritrea
         /// </summary>
-        ER,
-
+        Eritrea = 232,
         /// <summary>
         /// Western Sahara
         /// </summary>
-        EH,
-
+        WesternSahara = 732,
         /// <summary>
         /// Spain
         /// </summary>
-        ES,
-
+        Spain = 724,
         /// <summary>
         /// Estonia
         /// </summary>
-        EE,
-
+        Estonia = 233,
         /// <summary>
         /// Ethiopia
         /// </summary>
-        ET,
-
+        Ethiopia = 231,
         /// <summary>
         /// Finland
         /// </summary>
-        FI,
-
+        Finland = 246,
         /// <summary>
         /// Fiji
         /// </summary>
-        FJ,
-
+        Fiji = 242,
         /// <summary>
         /// Falkland Islands
         /// </summary>
-        FK,
-
+        FalklandIslands = 238,
         /// <summary>
         /// France
         /// </summary>
-        FR,
-
+        France = 250,
         /// <summary>
         /// Faroe Islands
         /// </summary>
-        FO,
-
+        FaroeIslands = 234,
         /// <summary>
         /// Micronesia
         /// </summary>
-        FM,
-
+        Micronesia = 583,
         /// <summary>
         /// Gabon
         /// </summary>
-        GA,
-
+        Gabon = 266,
         /// <summary>
         /// United Kingdom
         /// </summary>
-        GB,
-
+        UnitedKingdom = 826,
         /// <summary>
         /// Georgia
         /// </summary>
-        GE,
-
+        Georgia = 268,
         /// <summary>
         /// Guernsey
         /// </summary>
-        GG,
-
+        Guernsey = 831,
         /// <summary>
         /// Ghana
         /// </summary>
-        GH,
-
+        Ghana = 288,
         /// <summary>
         /// Gibraltar
         /// </summary>
-        GI,
-
+        Gibraltar = 292,
         /// <summary>
         /// Guinea
         /// </summary>
-        GN,
-
+        Guinea = 324,
         /// <summary>
         /// Guadeloupe
         /// </summary>
-        GP,
-
+        Guadeloupe = 312,
         /// <summary>
         /// Gambia
         /// </summary>
-        GM,
-
+        Gambia = 270,
         /// <summary>
         /// Guinea-Bissau
         /// </summary>
-        GW,
-
+        GuineaBissau = 624,
         /// <summary>
         /// Equatorial Guinea
         /// </summary>
-        GQ,
-
+        EquatorialGuinea = 226,
         /// <summary>
         /// Greece
         /// </summary>
-        GR,
-
+        Greece = 300,
         /// <summary>
         /// Grenada
         /// </summary>
-        GD,
-
+        Grenada = 308,
         /// <summary>
         /// Greenland
         /// </summary>
-        GL,
-
+        Greenland = 304,
         /// <summary>
         /// Guatemala
         /// </summary>
-        GT,
-
+        Guatemala = 320,
         /// <summary>
         /// French Guiana
         /// </summary>
-        GF,
-
+        FrenchGuiana = 254,
         /// <summary>
         /// Guam
         /// </summary>
-        GU,
-
+        Guam = 316,
         /// <summary>
         /// Guyana
         /// </summary>
-        GY,
-
+        Guyana = 328,
         /// <summary>
         /// Hong Kong
         /// </summary>
-        HK,
-
+        HongKong = 344,
         /// <summary>
         /// Heard Island and McDonald Islands
         /// </summary>
-        HM,
-
+        HeardIslandandMcDonaldIslands = 334,
         /// <summary>
         /// Honduras
         /// </summary>
-        HN,
-
+        Honduras = 340,
         /// <summary>
         /// Croatia
         /// </summary>
-        HR,
-
+        Croatia = 191,
         /// <summary>
         /// Haiti
         /// </summary>
-        HT,
-
+        Haiti = 332,
         /// <summary>
         /// Hungary
         /// </summary>
-        HU,
-
+        Hungary = 348,
         /// <summary>
         /// Indonesia
         /// </summary>
-        ID,
-
+        Indonesia = 360,
         /// <summary>
         /// Isle of Man
         /// </summary>
-        IM,
-
+        IsleofMan = 833,
         /// <summary>
         /// India
         /// </summary>
-        IN,
-
+        India = 356,
         /// <summary>
         /// British Indian Ocean Territory
         /// </summary>
-        IO,
-
+        BritishIndianOceanTerritory = 086,
         /// <summary>
         /// Ireland
         /// </summary>
-        IE,
-
+        Ireland = 372,
         /// <summary>
         /// Iran
         /// </summary>
-        IR,
-
+        Iran = 364,
         /// <summary>
         /// Iraq
         /// </summary>
-        IQ,
-
+        Iraq = 368,
         /// <summary>
         /// Iceland
         /// </summary>
-        IS,
-
+        Iceland = 352,
         /// <summary>
         /// Israel
         /// </summary>
-        IL,
-
+        Israel = 376,
         /// <summary>
         /// Italy
         /// </summary>
-        IT,
-
+        Italy = 380,
         /// <summary>
         /// Jamaica
         /// </summary>
-        JM,
-
+        Jamaica = 388,
         /// <summary>
         /// Jersey
         /// </summary>
-        JE,
-
+        Jersey = 832,
         /// <summary>
         /// Jordan
         /// </summary>
-        JO,
-
+        Jordan = 400,
         /// <summary>
         /// Japan
         /// </summary>
-        JP,
-
+        Japan = 392,
         /// <summary>
         /// Kazakhstan
         /// </summary>
-        KZ,
-
+        Kazakhstan = 398,
         /// <summary>
         /// Kenya
         /// </summary>
-        KE,
-
+        Kenya = 404,
         /// <summary>
         /// Kyrgyzstan
         /// </summary>
-        KG,
-
+        Kyrgyzstan = 417,
         /// <summary>
         /// Cambodia
         /// </summary>
-        KH,
-
+        Cambodia = 116,
         /// <summary>
         /// Kiribati
         /// </summary>
-        KI,
-
+        Kiribati = 296,
         /// <summary>
         /// Saint Kitts and Nevis
         /// </summary>
-        KN,
-
+        SaintKittsandNevis = 659,
         /// <summary>
         /// South Korea
         /// </summary>
-        KR,
-
-        /// <summary>
-        /// Kosovo
-        /// </summary>
-        XK,
-
+        SouthKorea = 410,
         /// <summary>
         /// Kuwait
         /// </summary>
-        KW,
-
+        Kuwait = 414,
         /// <summary>
         /// Laos
         /// </summary>
-        LA,
-
+        Laos = 418,
         /// <summary>
         /// Lebanon
         /// </summary>
-        LB,
-
+        Lebanon = 422,
         /// <summary>
         /// Liberia
         /// </summary>
-        LR,
-
+        Liberia = 430,
         /// <summary>
         /// Libya
         /// </summary>
-        LY,
-
+        Libya = 434,
         /// <summary>
         /// Saint Lucia
         /// </summary>
-        LC,
-
+        SaintLucia = 662,
         /// <summary>
         /// Liechtenstein
         /// </summary>
-        LI,
-
+        Liechtenstein = 438,
         /// <summary>
         /// Sri Lanka
         /// </summary>
-        LK,
-
+        SriLanka = 144,
         /// <summary>
         /// Lesotho
         /// </summary>
-        LS,
-
+        Lesotho = 426,
         /// <summary>
         /// Lithuania
         /// </summary>
-        LT,
-
+        Lithuania = 440,
         /// <summary>
         /// Luxembourg
         /// </summary>
-        LU,
-
+        Luxembourg = 442,
         /// <summary>
         /// Latvia
         /// </summary>
-        LV,
-
+        Latvia = 428,
         /// <summary>
         /// Macau
         /// </summary>
-        MO,
-
+        Macau = 446,
         /// <summary>
         /// Saint Martin
         /// </summary>
-        MF,
-
+        SaintMartin = 663,
         /// <summary>
         /// Morocco
         /// </summary>
-        MA,
-
+        Morocco = 504,
         /// <summary>
         /// Monaco
         /// </summary>
-        MC,
-
+        Monaco = 492,
         /// <summary>
         /// Moldova
         /// </summary>
-        MD,
-
+        Moldova = 498,
         /// <summary>
         /// Madagascar
         /// </summary>
-        MG,
-
+        Madagascar = 450,
         /// <summary>
         /// Maldives
         /// </summary>
-        MV,
-
+        Maldives = 462,
         /// <summary>
         /// Mexico
         /// </summary>
-        MX,
-
+        Mexico = 484,
         /// <summary>
         /// Marshall Islands
         /// </summary>
-        MH,
-
+        MarshallIslands = 584,
         /// <summary>
         /// Macedonia
         /// </summary>
-        MK,
-
+        Macedonia = 807,
         /// <summary>
         /// Mali
         /// </summary>
-        ML,
-
+        Mali = 466,
         /// <summary>
         /// Malta
         /// </summary>
-        MT,
-
+        Malta = 470,
         /// <summary>
         /// Myanmar
         /// </summary>
-        MM,
-
+        Myanmar = 104,
         /// <summary>
         /// Montenegro
         /// </summary>
-        ME,
-
+        Montenegro = 499,
         /// <summary>
         /// Mongolia
         /// </summary>
-        MN,
-
+        Mongolia = 496,
         /// <summary>
         /// Northern Mariana Islands
         /// </summary>
-        MP,
-
+        NorthernMarianaIslands = 580,
         /// <summary>
         /// Mozambique
         /// </summary>
-        MZ,
-
+        Mozambique = 508,
         /// <summary>
         /// Mauritania
         /// </summary>
-        MR,
-
+        Mauritania = 478,
         /// <summary>
         /// Montserrat
         /// </summary>
-        MS,
-
+        Montserrat = 500,
         /// <summary>
         /// Martinique
         /// </summary>
-        MQ,
-
+        Martinique = 474,
         /// <summary>
         /// Mauritius
         /// </summary>
-        MU,
-
+        Mauritius = 480,
         /// <summary>
         /// Malawi
         /// </summary>
-        MW,
-
+        Malawi = 454,
         /// <summary>
         /// Malaysia
         /// </summary>
-        MY,
-
+        Malaysia = 458,
         /// <summary>
         /// Mayotte
         /// </summary>
-        YT,
-
+        Mayotte = 175,
         /// <summary>
         /// Namibia
         /// </summary>
-        NA,
-
+        Namibia = 516,
         /// <summary>
         /// New Caledonia
         /// </summary>
-        NC,
-
+        NewCaledonia = 540,
         /// <summary>
         /// Niger
         /// </summary>
-        NE,
-
+        Niger = 562,
         /// <summary>
         /// Norfolk Island
         /// </summary>
-        NF,
-
+        NorfolkIsland = 574,
         /// <summary>
         /// Nigeria
         /// </summary>
-        NG,
-
+        Nigeria = 566,
         /// <summary>
         /// Nicaragua
         /// </summary>
-        NI,
-
+        Nicaragua = 558,
         /// <summary>
         /// Niue
         /// </summary>
-        NU,
-
+        Niue = 570,
         /// <summary>
         /// Netherlands
         /// </summary>
-        NL,
-
+        Netherlands = 528,
         /// <summary>
         /// Norway
         /// </summary>
-        NO,
-
+        Norway = 578,
         /// <summary>
         /// Nepal
         /// </summary>
-        NP,
-
+        Nepal = 524,
         /// <summary>
         /// Nauru
         /// </summary>
-        NR,
-
+        Nauru = 520,
         /// <summary>
         /// New Zealand
         /// </summary>
-        NZ,
-
+        NewZealand = 554,
         /// <summary>
         /// Oman
         /// </summary>
-        OM,
-
+        Oman = 512,
         /// <summary>
         /// Pakistan
         /// </summary>
-        PK,
-
+        Pakistan = 586,
         /// <summary>
         /// Panama
         /// </summary>
-        PA,
-
+        Panama = 591,
         /// <summary>
         /// Pitcairn Islands
         /// </summary>
-        PN,
-
+        PitcairnIslands = 612,
         /// <summary>
         /// Peru
         /// </summary>
-        PE,
-
+        Peru = 604,
         /// <summary>
         /// Philippines
         /// </summary>
-        PH,
-
+        Philippines = 608,
         /// <summary>
         /// Palau
         /// </summary>
-        PW,
-
+        Palau = 585,
         /// <summary>
         /// Papua New Guinea
         /// </summary>
-        PG,
-
+        PapuaNewGuinea = 598,
         /// <summary>
         /// Poland
         /// </summary>
-        PL,
-
+        Poland = 616,
         /// <summary>
         /// Puerto Rico
         /// </summary>
-        PR,
-
+        PuertoRico = 630,
         /// <summary>
         /// North Korea
         /// </summary>
-        KP,
-
+        NorthKorea = 408,
         /// <summary>
         /// Portugal
         /// </summary>
-        PT,
-
+        Portugal = 620,
         /// <summary>
         /// Paraguay
         /// </summary>
-        PY,
-
+        Paraguay = 600,
         /// <summary>
         /// Palestine
         /// </summary>
-        PS,
-
+        Palestine = 275,
         /// <summary>
         /// French Polynesia
         /// </summary>
-        PF,
-
+        FrenchPolynesia = 258,
         /// <summary>
         /// Qatar
         /// </summary>
-        QA,
-
+        Qatar = 634,
         /// <summary>
         /// Réunion
         /// </summary>
-        RE,
-
+        Réunion = 638,
         /// <summary>
         /// Romania
         /// </summary>
-        RO,
-
+        Romania = 642,
         /// <summary>
         /// Russia
         /// </summary>
-        RU,
-
+        Russia = 643,
         /// <summary>
         /// Rwanda
         /// </summary>
-        RW,
-
+        Rwanda = 646,
         /// <summary>
         /// Saudi Arabia
         /// </summary>
-        SA,
-
+        SaudiArabia = 682,
         /// <summary>
         /// Sudan
         /// </summary>
-        SD,
-
+        Sudan = 729,
         /// <summary>
         /// Senegal
         /// </summary>
-        SN,
-
+        Senegal = 686,
         /// <summary>
         /// Singapore
         /// </summary>
-        SG,
-
+        Singapore = 702,
         /// <summary>
         /// South Georgia
         /// </summary>
-        GS,
-
+        SouthGeorgia = 239,
         /// <summary>
         /// Svalbard and Jan Mayen
         /// </summary>
-        SJ,
-
+        SvalbardandJanMayen = 744,
         /// <summary>
         /// Solomon Islands
         /// </summary>
-        SB,
-
+        SolomonIslands = 090,
         /// <summary>
         /// Sierra Leone
         /// </summary>
-        SL,
-
+        SierraLeone = 694,
         /// <summary>
         /// El Salvador
         /// </summary>
-        SV,
-
+        ElSalvador = 222,
         /// <summary>
         /// San Marino
         /// </summary>
-        SM,
-
+        SanMarino = 674,
         /// <summary>
         /// Somalia
         /// </summary>
-        SO,
-
+        Somalia = 706,
         /// <summary>
         /// Saint Pierre and Miquelon
         /// </summary>
-        PM,
-
+        SaintPierreandMiquelon = 666,
         /// <summary>
         /// Serbia
         /// </summary>
-        RS,
-
+        Serbia = 688,
         /// <summary>
         /// South Sudan
         /// </summary>
-        SS,
-
+        SouthSudan = 728,
         /// <summary>
         /// São Tomé and Príncipe
         /// </summary>
-        ST,
-
+        SãoToméandPríncipe = 678,
         /// <summary>
         /// Suriname
         /// </summary>
-        SR,
-
+        Suriname = 740,
         /// <summary>
         /// Slovakia
         /// </summary>
-        SK,
-
+        Slovakia = 703,
         /// <summary>
         /// Slovenia
         /// </summary>
-        SI,
-
+        Slovenia = 705,
         /// <summary>
         /// Sweden
         /// </summary>
-        SE,
-
+        Sweden = 752,
         /// <summary>
         /// Swaziland
         /// </summary>
-        SZ,
-
+        Swaziland = 748,
         /// <summary>
         /// Sint Maarten
         /// </summary>
-        SX,
-
+        SintMaarten = 534,
         /// <summary>
         /// Seychelles
         /// </summary>
-        SC,
-
+        Seychelles = 690,
         /// <summary>
         /// Syria
         /// </summary>
-        SY,
-
+        Syria = 760,
         /// <summary>
         /// Turks and Caicos Islands
         /// </summary>
-        TC,
-
+        TurksandCaicosIslands = 796,
         /// <summary>
         /// Chad
         /// </summary>
-        TD,
-
+        Chad = 148,
         /// <summary>
         /// Togo
         /// </summary>
-        TG,
-
+        Togo = 768,
         /// <summary>
         /// Thailand
         /// </summary>
-        TH,
-
+        Thailand = 764,
         /// <summary>
         /// Tajikistan
         /// </summary>
-        TJ,
-
+        Tajikistan = 762,
         /// <summary>
         /// Tokelau
         /// </summary>
-        TK,
-
+        Tokelau = 772,
         /// <summary>
         /// Turkmenistan
         /// </summary>
-        TM,
-
+        Turkmenistan = 795,
         /// <summary>
         /// Timor-Leste
         /// </summary>
-        TL,
-
+        TimorLeste = 626,
         /// <summary>
         /// Tonga
         /// </summary>
-        TO,
-
+        Tonga = 776,
         /// <summary>
         /// Trinidad and Tobago
         /// </summary>
-        TT,
-
+        TrinidadandTobago = 780,
         /// <summary>
         /// Tunisia
         /// </summary>
-        TN,
-
+        Tunisia = 788,
         /// <summary>
         /// Turkey
         /// </summary>
-        TR,
-
+        Turkey = 792,
         /// <summary>
         /// Tuvalu
         /// </summary>
-        TV,
-
+        Tuvalu = 798,
         /// <summary>
         /// Taiwan
         /// </summary>
-        TW,
-
+        Taiwan = 158,
         /// <summary>
         /// Tanzania
         /// </summary>
-        TZ,
-
+        Tanzania = 834,
         /// <summary>
         /// Uganda
         /// </summary>
-        UG,
-
+        Uganda = 800,
         /// <summary>
         /// Ukraine
         /// </summary>
-        UA,
-
+        Ukraine = 804,
         /// <summary>
         /// United States Minor Outlying Islands
         /// </summary>
-        UM,
-
+        UnitedStatesMinorOutlyingIslands = 581,
         /// <summary>
         /// Uruguay
         /// </summary>
-        UY,
-
+        Uruguay = 858,
         /// <summary>
         /// United States
         /// </summary>
-        US,
-
+        UnitedStates = 840,
         /// <summary>
         /// Uzbekistan
         /// </summary>
-        UZ,
-
+        Uzbekistan = 860,
         /// <summary>
         /// Vatican City
         /// </summary>
-        VA,
-
+        VaticanCity = 336,
         /// <summary>
         /// Saint Vincent and the Grenadines
         /// </summary>
-        VC,
-
+        SaintVincentandtheGrenadines = 670,
         /// <summary>
         /// Venezuela
         /// </summary>
-        VE,
-
+        Venezuela = 862,
         /// <summary>
         /// British Virgin Islands
         /// </summary>
-        VG,
-
+        BritishVirginIslands = 092,
         /// <summary>
         /// United States Virgin Islands
         /// </summary>
-        VI,
-
+        UnitedStatesVirginIslands = 850,
         /// <summary>
         /// Vietnam
         /// </summary>
-        VN,
-
+        Vietnam = 704,
         /// <summary>
         /// Vanuatu
         /// </summary>
-        VU,
-
+        Vanuatu = 548,
         /// <summary>
         /// Wallis and Futuna
         /// </summary>
-        WF,
-
+        WallisandFutuna = 876,
         /// <summary>
         /// Samoa
         /// </summary>
-        WS,
-
+        Samoa = 882,
         /// <summary>
         /// Yemen
         /// </summary>
-        YE,
-
+        Yemen = 887,
         /// <summary>
         /// South Africa
         /// </summary>
-        ZA,
-
+        SouthAfrica = 710,
         /// <summary>
         /// Zambia
         /// </summary>
-        ZM,
-
+        Zambia = 894,
         /// <summary>
         /// Zimbabwe
         /// </summary>
-        ZW
+        Zimbabwe = 716,
     }
 }

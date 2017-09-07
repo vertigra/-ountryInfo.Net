@@ -1,25 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 
 namespace CountryInfo.Net.Test.CommonUtils
 {
     internal class RequestToUri
     {
-        private readonly RestClient mRestClient;
+        private const string mCountriesUri = "/mledoze/countries/master/countries.json";
+        private static readonly RestClient mRestClient = new RestClient("https://raw.githubusercontent.com");
 
-        internal RequestToUri(RestClient restClient)
+        /// <summary>
+        /// Gets the value with key.
+        /// </summary>
+        /// <param name="key">Json key</param>
+        /// <returns><see cref="Dictionary{TKey,TValue}">TKey is country, TValue is value key in param</see></returns>
+        internal static Dictionary<string, string> GetValueWithKey(string key)
         {
-            mRestClient = restClient;
+            JArray jArray = GetDeserealizeObject(mCountriesUri);
+
+            return jArray.Cast<JObject>().
+                ToDictionary(
+                    keys => keys["name"]["common"].ToString(),
+                    keys => keys[key].ToString());
         }
 
-        internal dynamic GetDeserealizeObject(string uri)
+        private static JArray GetDeserealizeObject(string uri)
         {
             RestRequest request = NewRequest(uri);
             RestResponse response = (RestResponse)NewResponse(request);
 
-            return Newtonsoft.Json.JsonConvert.DeserializeObject(response.Content);
+            return (JArray)JsonConvert.DeserializeObject(response.Content);
         }
 
         private static RestRequest NewRequest(string uri)
@@ -27,7 +41,7 @@ namespace CountryInfo.Net.Test.CommonUtils
             return new RestRequest(uri, Method.GET);
         }
 
-        private IRestResponse NewResponse(IRestRequest request)
+        private static IRestResponse NewResponse(IRestRequest request)
         {
             IRestResponse response = mRestClient.Execute(request);
 
@@ -37,37 +51,4 @@ namespace CountryInfo.Net.Test.CommonUtils
             throw new Exception(response.StatusDescription);
         }
     }
-
-    internal static class ObjectToList
-    {
-        internal const string mCountriesUri = "/mledoze/countries/master/countries.json";
-    
-        private static readonly RequestToUri mRequestToUri = new RequestToUri(new RestClient("https://raw.githubusercontent.com"));
-
-        internal static List<string> GetCca2List()
-        {
-            dynamic jobject = mRequestToUri.GetDeserealizeObject(mCountriesUri);
-            var list = new List<string>();
-
-            foreach (dynamic keys in jobject)
-            {
-                list.Add(keys.cca2.ToString());
-            }
-
-            return list;
-        }
-
-        internal static Dictionary<string, string> GetCcn3List()
-        {
-            dynamic jobject = mRequestToUri.GetDeserealizeObject(mCountriesUri);
-            var dictionary = new Dictionary<string, string>();
-
-            foreach (dynamic keys in jobject)
-            {
-                dictionary.Add(keys.name.common.ToString(), keys.ccn3.ToString());  
-            }
-
-            return dictionary;
-        }
-    }   
 }
