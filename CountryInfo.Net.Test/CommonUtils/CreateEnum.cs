@@ -33,8 +33,6 @@ namespace CountryInfo.Net.Test.CommonUtils
         private static void AddXmlElement(string key, string value)
         {
             Console.WriteLine("/// <summary>\n" + "/// " + key + "\n/// </summary>\n" + value + ",");
-        }
-
-        
+        } 
     }
 }

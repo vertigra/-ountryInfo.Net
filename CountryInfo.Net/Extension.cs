@@ -11,12 +11,5 @@ namespace CountryInfo.Net
 
             return null;
         }
-
-        public static int? ToInteger<T>(this T enumString) where T : struct
-        {
-            //todo added
-
-            return null;
-        }
     }
 }

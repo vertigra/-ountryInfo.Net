@@ -5,9 +5,9 @@
     /// </summary>
     public enum Cca2
     {
-        /// <summary>
-        /// Aruba
-        /// </summary>
+        ///<summary>
+        ///Aruba
+        ///</summary>
         AW,
 
         /// <summary>

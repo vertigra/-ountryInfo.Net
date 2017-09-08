@@ -7,10 +7,10 @@ using NUnit.Framework;
 namespace CountryInfo.Net.Test
 {
     [TestFixture]
-    internal class CCA2Test
+    internal class EnumTest
     {
         [Test, Timeout(30000)]
-        public static void ActualCountriesJsonEqualsWithEnumTest()
+        public static void Cca2Test()
         {
             List<string> listCca2= Enum.GetValues(typeof(Cca2))
                 .Cast<Cca2>()
@@ -20,10 +20,16 @@ namespace CountryInfo.Net.Test
             Assert.AreEqual(RequestToUri.GetValueWithKey("cca2").Values, listCca2);
         }
 
-        [Test]
-        public static void Test()
+        [Test, Ignore("Fail")]
+        public static void Ccn3Test()
         {
-            Console.WriteLine(Ccn3.Aruba);
+            List<string> listCcn3enum = Enum.GetValues(typeof(Ccn3))
+                .Cast<Ccn3>()
+                .Select(v => ((int)v).ToString())
+                .ToList();
+
+            Assert.AreEqual(RequestToUri.GetValueWithKey("ccn3").Values, 
+                listCcn3enum); ;
         }
     }
 }
