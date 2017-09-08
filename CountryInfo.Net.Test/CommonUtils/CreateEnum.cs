@@ -15,6 +15,9 @@ namespace CountryInfo.Net.Test.CommonUtils
             }
         }
 
+        /// <summary>
+        /// <code>.Where(keys => keys.Value != "")</code> because Kosovo does not have the ISO 3166-1 numeric code
+        /// </summary>
         [Test]
         public void Ccn3Create()
         {

@@ -12,7 +12,7 @@ namespace CountryInfo.Net.Test
         [Test, Timeout(30000)]
         public static void Cca2Test()
         {
-            List<string> listCca2= Enum.GetValues(typeof(Cca2))
+            var listCca2= Enum.GetValues(typeof(Cca2))
                 .Cast<Cca2>()
                 .Select(v => v.ToString())
                 .ToList();
@@ -20,16 +20,24 @@ namespace CountryInfo.Net.Test
             Assert.AreEqual(RequestToUri.GetValueWithKey("cca2").Values, listCca2);
         }
 
-        [Test, Ignore("Fail")]
+
+        /// <summary>
+        /// <code>.Where(keys => keys.Value != "")</code> because Kosovo does not have the ISO 3166-1 numeric code
+        /// </summary>
+        [Test, Timeout(30000)]
         public static void Ccn3Test()
         {
-            List<string> listCcn3enum = Enum.GetValues(typeof(Ccn3))
+            var listCcn3enum = Enum.GetValues(typeof(Ccn3))
                 .Cast<Ccn3>()
-                .Select(v => ((int)v).ToString())
+                .Select(v => ((int)v).ToString("000"))
                 .ToList();
 
-            Assert.AreEqual(RequestToUri.GetValueWithKey("ccn3").Values, 
-                listCcn3enum); ;
+            var listExpected = 
+                RequestToUri.GetValueWithKey("ccn3").Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
+
+            listExpected.Sort();
+
+            Assert.AreEqual(listExpected, listCcn3enum); 
         }
     }
 }
