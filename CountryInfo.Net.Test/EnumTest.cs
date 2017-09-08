@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using CountryInfo.Net.Test.CommonUtils;
 using NUnit.Framework;
@@ -38,6 +37,18 @@ namespace CountryInfo.Net.Test
             listExpected.Sort();
 
             Assert.AreEqual(listExpected, listCcn3enum); 
+        }
+
+
+        [Test, Timeout(30000)]
+        public static void Cca3Test()
+        {
+            var listCca2 = Enum.GetValues(typeof(Cca3))
+                .Cast<Cca3>()
+                .Select(v => v.ToString())
+                .ToList();
+
+            Assert.AreEqual(RequestToUri.GetValueWithKey("cca3").Values, listCca2);
         }
     }
 }

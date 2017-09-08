@@ -27,6 +27,16 @@ namespace CountryInfo.Net.Test.CommonUtils
             }
         }
 
+        [Test]
+        public void Cca3Create()
+        {
+            foreach (var keys in RequestToUri.GetValueWithKey("cca3"))
+            {
+                AddXmlElement(keys.Key, keys.Value);
+            }
+        }
+
+
         private static void CreateEnumWithIntegerValue(string key, string value)
         {
             AddXmlElement(key, $"{key} = {value}"
@@ -35,7 +45,7 @@ namespace CountryInfo.Net.Test.CommonUtils
 
         private static void AddXmlElement(string key, string value)
         {
-            Console.WriteLine("/// <summary>\n" + "/// " + key + "\n/// </summary>\n" + value + ",");
+            Console.WriteLine("/// <summary>\n" + "/// " + key + "\n/// </summary>\n" + value + ",\n");
         } 
     }
 }
