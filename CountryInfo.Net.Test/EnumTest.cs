@@ -8,6 +8,9 @@ namespace CountryInfo.Net.Test
     [TestFixture]
     internal class EnumTest
     {
+        /// <summary>
+        /// Code ISO 3166-1 alpha-2 test
+        /// </summary>
         [Test, Timeout(30000)]
         public static void Cca2Test()
         {
@@ -21,8 +24,9 @@ namespace CountryInfo.Net.Test
 
 
         /// <summary>
-        /// <code>.Where(keys => keys.Value != "")</code> because Kosovo does not have the ISO 3166-1 numeric code
+        /// Сode ISO 3166-1 numeric test.
         /// </summary>
+        /// <code>.Where(keys => keys.Value != "")</code> because Kosovo does not have the ISO 3166-1 numeric code
         [Test, Timeout(30000)]
         public static void Ccn3Test()
         {
@@ -40,6 +44,9 @@ namespace CountryInfo.Net.Test
         }
 
 
+        /// <summary>
+        /// Code ISO 3166-1 alpha-3 test.
+        /// </summary>
         [Test, Timeout(30000)]
         public static void Cca3Test()
         {
@@ -49,6 +56,25 @@ namespace CountryInfo.Net.Test
                 .ToList();
 
             Assert.AreEqual(RequestToUri.GetValueWithKey("cca3").Values, listCca2);
+        }
+
+
+        /// <summary>
+        /// Code International Olympic Committee test
+        /// </summary>
+        /// <code>.Where(keys => keys.Value != "")</code> because that not all countries have the code of the Olympic Committee
+        [Test, Timeout(30000)]
+        public static void CiocTest()
+        {
+            var listCca2 = Enum.GetValues(typeof(Cioc))
+                .Cast<Cioc>()
+                .Select(v => v.ToString())
+                .ToList();
+
+            var listExpected =
+                RequestToUri.GetValueWithKey("cioc").Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
+
+            Assert.AreEqual(listExpected, listCca2);
         }
     }
 }

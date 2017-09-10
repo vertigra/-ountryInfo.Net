@@ -36,6 +36,14 @@ namespace CountryInfo.Net.Test.CommonUtils
             }
         }
 
+        [Test]
+        public void CiocCreate()
+        {
+            foreach (var keys in RequestToUri.GetValueWithKey("cioc").Where(keys => keys.Value != ""))
+            {
+                AddXmlElement(keys.Key, keys.Value);
+            }
+        }
 
         private static void CreateEnumWithIntegerValue(string key, string value)
         {
