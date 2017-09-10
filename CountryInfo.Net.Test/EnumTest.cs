@@ -8,6 +8,8 @@ namespace CountryInfo.Net.Test
     [TestFixture]
     internal class EnumTest
     {
+        //todo join with test. Create list -> test
+
         /// <summary>
         /// Code ISO 3166-1 alpha-2 test
         /// </summary>
@@ -21,7 +23,6 @@ namespace CountryInfo.Net.Test
 
             Assert.AreEqual(RequestToUri.GetValueWithKey("cca2").Values, listCca2);
         }
-
 
         /// <summary>
         /// Сode ISO 3166-1 numeric test.
@@ -43,7 +44,6 @@ namespace CountryInfo.Net.Test
             Assert.AreEqual(listExpected, listCcn3enum); 
         }
 
-
         /// <summary>
         /// Code ISO 3166-1 alpha-3 test.
         /// </summary>
@@ -57,7 +57,6 @@ namespace CountryInfo.Net.Test
 
             Assert.AreEqual(RequestToUri.GetValueWithKey("cca3").Values, listCca2);
         }
-
 
         /// <summary>
         /// Code International Olympic Committee test

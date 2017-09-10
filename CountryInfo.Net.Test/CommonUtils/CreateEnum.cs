@@ -6,6 +6,9 @@ namespace CountryInfo.Net.Test.CommonUtils
 {
     internal class CreateEnum
     {
+        /// <summary>
+        /// Code ISO 3166-1 alpha-2 create
+        /// </summary>
         [Test]
         public void Cca2Create()
         {
@@ -16,8 +19,9 @@ namespace CountryInfo.Net.Test.CommonUtils
         }
 
         /// <summary>
-        /// <code>.Where(keys => keys.Value != "")</code> because Kosovo does not have the ISO 3166-1 numeric code
+        /// Сode ISO 3166-1 numeric create
         /// </summary>
+        /// <code>.Where(keys => keys.Value != "")</code> because Kosovo does not have the ISO 3166-1 numeric code
         [Test]
         public void Ccn3Create()
         {
@@ -27,6 +31,9 @@ namespace CountryInfo.Net.Test.CommonUtils
             }
         }
 
+        /// <summary>
+        /// Code ISO 3166-1 alpha-3 create.
+        /// </summary>
         [Test]
         public void Cca3Create()
         {
@@ -36,6 +43,10 @@ namespace CountryInfo.Net.Test.CommonUtils
             }
         }
 
+        /// <summary>
+        /// Code International Olympic Committee create
+        /// </summary>
+        /// <code>.Where(keys => keys.Value != "")</code> because that not all countries have the code of the Olympic Committee
         [Test]
         public void CiocCreate()
         {
