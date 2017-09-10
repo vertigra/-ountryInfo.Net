@@ -33,6 +33,7 @@ Use the **Cca3** enumeration to get the country code **ISO 3166-1 alpha-3**. The
 ### Code International Olympic Committee
 Use the **Cioc** enumeration to get the country code **International Olympic Committee**. The name of the country is written in the commentary:
 
+![cca3_select_country](Images/Content/Cioc_select_country.png)
 
 ## Thanks
 
