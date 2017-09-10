@@ -7,7 +7,7 @@
 ## How to use
 
 ### Code ISO 3166-1 alpha-2
-Use the **Cca2** enumeration to get the country code **iso 3166-1 alpha-2**. The name of the country is written in the commentary:
+Use the **Cca2** enumeration to get the country code **ISO 3166-1 alpha-2**. The name of the country is written in the commentary:
 
 ![cca2_select_country](Images/Content/cca2_select_country.png)
 
@@ -25,6 +25,10 @@ Console.WriteLine("Country code " + Ccn3.Bahrain + " is " + ((int)Ccn3.Bahrain).
 
 ```
 
+### Code ISO 3166-1 alpha-3
+Use the **Cca3** enumeration to get the country code **ISO 3166-1 alpha-3**. The name of the country is written in the commentary:
+
+![cca3_select_country](Images/Content/cca3_select_country.png)
 
 
 ## Thanks
