@@ -33,7 +33,6 @@ namespace CountryInfo.Net.Test
                 .Cast<Ccn3>()
                 .Select(v => ((int)v).ToString("000"))
                 .ToList();
-
             var listCcn3Expected = RequestToUri.GetValueWithKey("ccn3").Where(keys => keys.Value != "");
 
             Utils.PrintResut(listCcn3Expected, true);
@@ -74,6 +73,24 @@ namespace CountryInfo.Net.Test
             var listExpected = listCiocExpected.Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
             
             Assert.AreEqual(listExpected, listCca2);
+        }
+
+        /// <summary>
+        /// Code International Olympic Committee test
+        /// </summary>
+        /// <code>.Where(keys => keys.Value != "")</code> because that not all countries have the code of the Olympic Committee
+        [Test, Timeout(30000)]
+        public static void TldTest()
+        {
+            var listCca2 = Utils.GetEnum<Cioc>();
+            var listCiocExpected = RequestToUri.GetValueWithKey("tld");
+
+            Utils.PrintResut(listCiocExpected);
+
+
+            //var listExpected = listCiocExpected.Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
+
+            //Assert.AreEqual(listExpected, listCca2);
         }
     }
 }

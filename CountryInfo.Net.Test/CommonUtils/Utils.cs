@@ -6,7 +6,6 @@ namespace CountryInfo.Net.Test.CommonUtils
 {
     internal static class Utils
     {
-
         internal static void PrintResut(IEnumerable<KeyValuePair<string, string>> dictionary, bool enumWithIntegerValue = false)
         {
             foreach (var element in dictionary)
@@ -16,7 +15,6 @@ namespace CountryInfo.Net.Test.CommonUtils
                 else
                     AddXmlElement(element.Key, element.Value);
             }
-            
         }
         
         internal static List<string> GetEnum<T>() where T : struct

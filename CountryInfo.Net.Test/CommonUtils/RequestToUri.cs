@@ -18,7 +18,7 @@ namespace CountryInfo.Net.Test.CommonUtils
         /// </summary>
         /// <param name="key">Json key</param>
         /// <returns><see cref="Dictionary{TKey,TValue}">TKey is country, TValue is value key in param</see></returns>
-        internal static Dictionary<string, string> GetValueWithKey(string key)
+        internal static Dictionary<string, string> GetValueWithKey(string key, bool needParseArray = false)
         {
             JArray jArray = GetDeserealizeObject(mCountriesUri);
 
