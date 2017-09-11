@@ -8,20 +8,18 @@ namespace CountryInfo.Net.Test
     [TestFixture]
     internal class EnumTest
     {
-        //todo join with test. Create list -> test
-
         /// <summary>
         /// Code ISO 3166-1 alpha-2 test
         /// </summary>
         [Test, Timeout(30000)]
         public static void Cca2Test()
         {
-            var listCca2= Enum.GetValues(typeof(Cca2))
-                .Cast<Cca2>()
-                .Select(v => v.ToString())
-                .ToList();
+            var listCca2 = Utils.GetEnum<Cca2>();
+            var listCca2expected = RequestToUri.GetValueWithKey("cca2");
 
-            Assert.AreEqual(RequestToUri.GetValueWithKey("cca2").Values, listCca2);
+            Utils.PrintResut(listCca2expected);
+
+            Assert.AreEqual(listCca2expected.Values, listCca2);
         }
 
         /// <summary>
@@ -36,11 +34,14 @@ namespace CountryInfo.Net.Test
                 .Select(v => ((int)v).ToString("000"))
                 .ToList();
 
-            var listExpected = 
-                RequestToUri.GetValueWithKey("ccn3").Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
+            var listCcn3Expected = RequestToUri.GetValueWithKey("ccn3").Where(keys => keys.Value != "");
+
+            Utils.PrintResut(listCcn3Expected, true);
+
+            var listExpected = listCcn3Expected.Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
 
             listExpected.Sort();
-
+            
             Assert.AreEqual(listExpected, listCcn3enum); 
         }
 
@@ -50,12 +51,12 @@ namespace CountryInfo.Net.Test
         [Test, Timeout(30000)]
         public static void Cca3Test()
         {
-            var listCca2 = Enum.GetValues(typeof(Cca3))
-                .Cast<Cca3>()
-                .Select(v => v.ToString())
-                .ToList();
+            var listCca2 = Utils.GetEnum<Cca3>();
+            var listCca3Expected = RequestToUri.GetValueWithKey("cca3");
 
-            Assert.AreEqual(RequestToUri.GetValueWithKey("cca3").Values, listCca2);
+            Utils.PrintResut(listCca3Expected);
+
+            Assert.AreEqual(listCca3Expected.Values, listCca2);
         }
 
         /// <summary>
@@ -65,14 +66,13 @@ namespace CountryInfo.Net.Test
         [Test, Timeout(30000)]
         public static void CiocTest()
         {
-            var listCca2 = Enum.GetValues(typeof(Cioc))
-                .Cast<Cioc>()
-                .Select(v => v.ToString())
-                .ToList();
+            var listCca2 = Utils.GetEnum<Cioc>();
+            var listCiocExpected = RequestToUri.GetValueWithKey("cioc").Where(keys => keys.Value != "");
 
-            var listExpected =
-                RequestToUri.GetValueWithKey("cioc").Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
+            Utils.PrintResut(listCiocExpected);
 
+            var listExpected = listCiocExpected.Where(keys => keys.Value != "").Select(keys => keys.Value).ToList();
+            
             Assert.AreEqual(listExpected, listCca2);
         }
     }

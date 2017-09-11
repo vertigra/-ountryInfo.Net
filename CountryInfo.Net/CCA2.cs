@@ -1,7 +1,7 @@
 ﻿namespace CountryInfo.Net
 {
     /// <summary>
-    /// Countries code ISO 3166-1 alpha-2
+    /// Countries code ISO 3166-1 alpha-2.
     /// </summary>
     public enum Cca2
     {
